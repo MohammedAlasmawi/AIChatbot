@@ -1,0 +1,7 @@
+flask
+transformers
+torch
+langchain
+faiss-cpu
+PyPDF2
+python-dotenv

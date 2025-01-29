@@ -1,0 +1,8 @@
+# Ignore Python cache
+__pycache__/
+
+# Ignore FAISS store
+faiss_store/
+
+# Ignore environment variables
+.env

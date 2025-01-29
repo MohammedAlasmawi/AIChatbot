@@ -1,0 +1,120 @@
+.chatbot {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  margin: 20px auto;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background: linear-gradient(to right, #6a89cc, #8e44ad); /* Blue gradient */
+}
+
+.chatbot-messages {
+  padding: 15px;
+  flex-grow: 1;
+  overflow-y: auto;
+  max-height: 400px;
+  background-color: #f7f9fc;
+}
+
+.message {
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 12px;
+  font-size: 14px;
+  line-height: 1.4;
+  word-wrap: break-word;
+  max-width: 75%;
+}
+
+.message.user {
+  background-color: #d4edda;
+  align-self: flex-end;
+  color: #155724;
+}
+
+.message.bot {
+  background-color: #f8d7da;
+  align-self: flex-start;
+  color: #721c24;
+}
+
+.chatbot-input {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-top: 1px solid #ddd;
+  background-color: #f9f9f9;
+}
+
+.chatbot-input input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+  margin-right: 10px;
+  outline: none;
+}
+
+.chatbot-input input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 4px rgba(0, 123, 255, 0.25);
+}
+
+.chatbot-input button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  outline: none;
+}
+
+.chatbot-input button:hover {
+  background-color: #0056b3;
+}
+
+.chatbot-input button:disabled {
+  background-color: #cce5ff;
+  cursor: not-allowed;
+}
+
+.chatbot-messages::-webkit-scrollbar {
+  width: 8px;
+}
+
+.chatbot-messages::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  border-radius: 4px;
+}
+
+.chatbot-messages::-webkit-scrollbar-thumb:hover {
+  background-color: #aaa;
+}
+
+.chatbot-messages::-webkit-scrollbar-track {
+  background-color: #f7f7f7;
+}
+
+@media (max-width: 768px) {
+  .chatbot {
+    width: 100%;
+    margin: 10px;
+  }
+
+  .chatbot-input input {
+    font-size: 14px;
+  }
+
+  .chatbot-input button {
+    font-size: 14px;
+  }
+
+  .chatbot-messages {
+    height: 300px;
+  }
+}
