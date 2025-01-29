@@ -38,7 +38,7 @@ This is a **Bahrain Labor Law Chatbot**, built using **Django (Backend)** and **
 git clone https://github.com/yourusername/labor-law-chatbot.git
 cd labor-law-chatbot
 
-
+### 2️⃣ Setup Django Backend
 cd backend
 python -m venv venv
 source venv/bin/activate  # On Windows use: venv\Scripts\activate
@@ -46,6 +46,7 @@ pip install -r requirements.txt
 python manage.py migrate
 python manage.py runserver
 
+### 3️⃣ Setup Flask AI Service
 cd ../frontend
 pip install -r requirements.txt
 python app.py
